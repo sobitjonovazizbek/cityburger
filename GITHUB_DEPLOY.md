@@ -1,59 +1,67 @@
-# GitHub Pages'ga qo'yish - Qadam-baqadam ko'rsatma
+# 🚀 GitHub Pages'ga qo'yish - Qadamlarni bajarish
 
-## ✅ QADAM 1: GitHub'da repository yarating
+## 1️⃣ GitHub'da repository yarating
 
-1. **GitHub.com** ga kiring va tizimga kiring
+1. https://github.com ga kiring
 2. O'ng yuqori burchakdagi **"+"** → **"New repository"** ni bosing
 3. Repository nomini kiriting: `cityburger-website` (yoki istalgan nom)
-4. **"Public"** ni tanlang (GitHub Pages bepul faqat Public repositorylar uchun)
-5. **"Add a README file"** ni TIKLAMANG (bizda allaqachon bor)
-6. **"Create repository"** tugmasini bosing
+4. **"Public"** ni tanlang (GitHub Pages bepul faqat public repo'lar uchun)
+5. **"Create repository"** tugmasini bosing
 
-## ✅ QADAM 2: Terminalda quyidagi buyruqlarni bajaring
+## 2️⃣ Terminalda quyidagi buyruqlarni bajaring:
 
-Repository yaratilgandan keyin GitHub sizga buyruqlarni ko'rsatadi. 
+GitHub'da repository yaratgandan keyin, sizga berilgan manzilni oling (masalan: `https://github.com/YOUR_USERNAME/cityburger-website.git`)
 
-**O'zingizning repository manzilingizni o'rnating:**
+### PowerShell'da quyidagi buyruqlarni bajaring:
 
-```bash
+```powershell
+# Branch nomini main'ga o'zgartirish
 git branch -M main
+
+# GitHub repository'ni qo'shish (YOUR_USERNAME va REPO_NAME ni o'zgartiring!)
 git remote add origin https://github.com/YOUR_USERNAME/cityburger-website.git
+
+# Kodlarni GitHub'ga yuklash
 git push -u origin main
 ```
 
-**MASALAN**, agar username'ingiz `john` va repository nomi `cityburger-website` bo'lsa:
-```bash
-git branch -M main
+**MASALAN:**
+Agar GitHub username'ingiz `john` va repository nomi `cityburger-website` bo'lsa:
+```powershell
 git remote add origin https://github.com/john/cityburger-website.git
 git push -u origin main
 ```
 
-## ✅ QADAM 3: GitHub Pages'ni yoqing
+## 3️⃣ GitHub Pages'ni yoqing
 
-1. Repository'ga kiring
-2. **"Settings"** tugmasini bosing (yuqoridagi menyuda)
+1. GitHub'da repository'ga kiring
+2. **"Settings"** tugmasini bosing (yuqorida)
 3. Chap menudan **"Pages"** ni tanlang
 4. **"Source"** bo'limida:
    - **Branch:** `main` ni tanlang
    - **Folder:** `/ (root)` ni tanlang
 5. **"Save"** tugmasini bosing
 
-## ✅ QADAM 4: Kuting va saytingizni oching
+## 4️⃣ Saytingiz tayyor! 🎉
 
-- 2-3 daqiqadan keyin saytingiz tayyor bo'ladi
-- Manzil: `https://YOUR_USERNAME.github.io/cityburger-website`
-- Yoki Settings → Pages bo'limida manzil ko'rsatiladi
+2-3 daqiqadan keyin saytingiz quyidagi manzilda ochiladi:
+```
+https://YOUR_USERNAME.github.io/cityburger-website
+```
 
-## 🎉 Tayyor!
-
-Saytingiz endi internetda mavjud va hamma kishi ko'ra oladi!
+**MASALAN:**
+```
+https://john.github.io/cityburger-website
+```
 
 ---
 
-**Muammo bo'lsa:**
-- Git username va email'ni o'rnatish kerak bo'lishi mumkin:
-  ```bash
-  git config --global user.name "Your Name"
-  git config --global user.email "your.email@example.com"
-  ```
+## ⚠️ Muammo bo'lsa:
 
+- **GitHub akkaunt yo'qmi?** - https://github.com/join da ro'yxatdan o'ting
+- **Git credentials kerakmi?** - GitHub'da Personal Access Token yarating
+- **Push qilishda xato?** - `git remote -v` buyrug'i bilan remote'ni tekshiring
+
+---
+
+**Yordam kerak bo'lsa, ayting!** 😊
